@@ -38,13 +38,13 @@ spec:
               exit 1
           env:
             - name: FRONTEND_ADDR
-              value: "frontend.dev.svc.cluster.local:80"
+              value: "frontend:80"
       containers:
         - name: main
           image: marypearl/loadgenerator:latest
           env:
             - name: FRONTEND_ADDR
-              value: "frontend.dev.svc.cluster.local:80"
+              value: "frontend:80"
             - name: USERS
               value: "10"
             - name: RATE
