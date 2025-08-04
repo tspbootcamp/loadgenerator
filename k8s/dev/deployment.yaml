@@ -14,7 +14,7 @@ spec:
       labels:
         app: loadgenerator
     spec:
-      serviceAccountName: loadgenerator
+##      serviceAccountName: loadgenerator
       initContainers:
         - name: frontend-check
           image: curlimages/curl:latest
